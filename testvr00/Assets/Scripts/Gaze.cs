@@ -10,9 +10,10 @@ public class Gaze : MonoBehaviour
 {
     public Image circulo; //objeto que muestra un sprite circular
     public float totalTime = 0.6f; //tiempo que se debe hacer hover para activar clic
-    public GvrReticlePointer pointer;
-    bool status; //status de conteo
-    float timer; //incrementa su valor cuando se hace hover
+    public UnityEvent gvrClick;
+    //public GvrReticlePointer pointer;
+    bool gvrStatus; //status de conteo
+    float gvrTimer; //incrementa su valor cuando se hace hover
 
     private void Start()
     {
@@ -23,28 +24,29 @@ public class Gaze : MonoBehaviour
     // Revisar status y actualizar timer
     void Update()
     {
-        if(status == true)
+        if(gvrStatus == true)
         {
-            timer += Time.deltaTime;
-            circulo.fillAmount = timer / totalTime;
+            gvrTimer += Time.deltaTime;
+            circulo.fillAmount = gvrTimer / totalTime;
         }
         
-        if (timer >= totalTime)
+        if (gvrTimer >= totalTime)
         {
             //pointer.OnPointerClickDown();
             //GvrPointerInputModule.Pointer.TriggerDown();
+            gvrClick.Invoke();
         }
     }
 
     public void On()
     {
-        status = true;
+        gvrStatus = true;
     }
 
     public void Off()
     {
-        status = false;
-        timer = 0;
+        gvrStatus = false;
+        gvrTimer = 0;
         circulo.fillAmount = 0;
     }
 }
