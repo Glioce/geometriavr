@@ -17,7 +17,10 @@ https://answers.unity.com/questions/1013679/trying-to-change-source-image-of-ui-
 UI system VR  
 https://www.youtube.com/watch?v=__iTtJHZg6k  
 
-
+Enviar correo electrónico  
+Se usa una cuenta de gmail, que tiene activado el uso de apps no seguras    
+https://unity3dtuts.com/how-to-send-email-from-unity3d/  
+https://answers.unity.com/questions/433283/how-to-send-email-with-c.html
 
 
 Puntero con barra de carga circular  
