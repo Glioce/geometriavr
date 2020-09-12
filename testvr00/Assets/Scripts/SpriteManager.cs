@@ -13,7 +13,7 @@ public class SpriteManager : MonoBehaviour
         //SpriteRenderer.sprite = sprites[0];
         //GetComponent<SpriteRenderer>().sprite = sprites[0];
         //GetComponent<Image>() = sprites[0];
-        GetComponent<Image>().sprite = sprites[1];
+        GetComponent<Image>().sprite = sprites[0];
         //GetComponent<Image>().overrideSprite = sprites[1];
     }
 

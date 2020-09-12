@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ControladorTest
+    - Gaze
     - GoogleVR.Demos.DemoInputManager
     - GoogleVR.Demos.DemoSceneManager
     - GoogleVR.HelloVR.HeadsetDemoManager
@@ -21,9 +23,9 @@ ScriptsOnlyBuild:
     - GvrReticlePointer
     - GvrTrackedController
     - InstantPreviewHelper
+    - SpriteManager
     - TalesFromTheRift.CanvasKeyboard
     - TalesFromTheRift.CanvasKeyboardASCII
-    - TecladoNativo
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -42,7 +44,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Correo00.unity:
+    Assets/Scenes/Test00.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -72,71 +74,75 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11284}
+      Script: {instanceID: 11290}
     - Class: 114
-      Script: {instanceID: 11322}
+      Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11474}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 11644}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11654}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 11700}
     - Class: 114
-      Script: {instanceID: 11712}
+      Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 11804}
+      Script: {instanceID: 11810}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11950}
     - Class: 114
-      Script: {instanceID: 12358}
+      Script: {instanceID: 11976}
     - Class: 114
-      Script: {instanceID: 12388}
+      Script: {instanceID: 12364}
     - Class: 114
-      Script: {instanceID: 12426}
+      Script: {instanceID: 12396}
     - Class: 114
-      Script: {instanceID: 12528}
+      Script: {instanceID: 12434}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12536}
     - Class: 114
-      Script: {instanceID: 12656}
+      Script: {instanceID: 12566}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12664}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12680}
     - Class: 114
-      Script: {instanceID: 12804}
+      Script: {instanceID: 12718}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12812}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12816}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12888}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 12944}
     - Class: 114
-      Script: {instanceID: 13014}
+      Script: {instanceID: 12988}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13076}
+      Script: {instanceID: 13036}
     - Class: 114
-      Script: {instanceID: 13132}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 13320}
+      Script: {instanceID: 13140}
     - Class: 114
-      Script: {instanceID: 13350}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13394}
+      Script: {instanceID: 13358}
     - Class: 114
-      Script: {instanceID: 13406}
+      Script: {instanceID: 13414}
     - Class: 114
-      Script: {instanceID: 13418}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13430}
+      Script: {instanceID: 13438}
+    - Class: 114
+      Script: {instanceID: 13466}
+    - Class: 114
+      Script: {instanceID: 63944}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -414,13 +420,13 @@ ScriptsOnlyBuild:
     className: ButtonListener
   - hash:
       serializedVersion: 2
-      Hash: 4fa2ee9fa2ace58e7d7d856b41dc6b40
+      Hash: 3e143858c5d9711f034dd535e0847066
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Gaze
   - hash:
       serializedVersion: 2
-      Hash: de0b887d8aac05909a774c879b293408
+      Hash: b7a0080c90a867df2a72b2dda75ace9c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ControladorUI
@@ -864,7 +870,7 @@ ScriptsOnlyBuild:
     className: EmulatorClientSocket
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 26e1a9a15572d150e9a54f776435097f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TecladoNativo
@@ -946,7 +952,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 584bbc1edcfcc06079c34c015b8c4720
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LanzaClic
+  - hash:
+      serializedVersion: 2
+      Hash: ef479dc200e28153cd258ee367476f82
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControladorTest
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Correo00.unity
-  playerPath: C:/Git/geometriavr/testvr00/testvr00kb3.apk
+  - Assets/Scenes/Test00.unity
+  playerPath: F:/Unity-1/geometriavr/testvr00/testvr00test0.apk

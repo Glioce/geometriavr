@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Net.Mail;
+using System;
+using UnityEngine.SceneManagement;
 
 public class TecladoNativo : MonoBehaviour
 {
     private TouchScreenKeyboard keyboard;
+    public GameObject panelError;
 
     private void Start()
     {
@@ -26,5 +30,27 @@ public class TecladoNativo : MonoBehaviour
     public void AbreTeclado()
     {
         keyboard = TouchScreenKeyboard.Open(Globals.userMail, TouchScreenKeyboardType.EmailAddress);
+    }
+
+    public void ValidaMail()
+    {
+        //if (IsValid(Globals.userMail)) 
+        //SceneManager.LoadScene("Instrucciones00");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //else
+        //panelError.SetActive(true);
+    }
+
+    public bool IsValid(string emailaddress)
+    {
+        try
+        {
+            MailAddress m = new MailAddress(emailaddress);
+            return true;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
     }
 }
