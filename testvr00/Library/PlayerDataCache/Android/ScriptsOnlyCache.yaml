@@ -1,18 +1,28 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ControladorUI
-    - Gaze
+    - GoogleVR.Demos.DemoInputManager
+    - GoogleVR.Demos.DemoSceneManager
+    - GoogleVR.HelloVR.HeadsetDemoManager
+    - GoogleVR.HelloVR.HelloVRManager
+    - GoogleVR.HelloVR.ObjectController
+    - Gvr.Internal.InstantPreview
+    - GvrArmModel
     - GvrControllerInput
+    - GvrControllerReticleVisual
+    - GvrControllerTooltipsSimple
+    - GvrControllerVisual
     - GvrEditorEmulator
+    - GvrHeadset
+    - GvrLaserPointer
+    - GvrLaserVisual
     - GvrPointerInputModule
     - GvrPointerPhysicsRaycaster
     - GvrReticlePointer
-    - SmtpMailSender
-    - SpriteManager
+    - GvrTrackedController
+    - InstantPreviewHelper
     - TalesFromTheRift.CanvasKeyboard
     - TalesFromTheRift.CanvasKeyboardASCII
-    - TalesFromTheRift.OpenCanvasKeyboard
     - TecladoNativo
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -23,18 +33,16 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
-    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
-    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Test00.unity:
+    Assets/Scenes/Correo00.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -55,65 +63,85 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11282}
+      Script: {instanceID: 11284}
     - Class: 114
-      Script: {instanceID: 11472}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11474}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11518}
     - Class: 114
-      Script: {instanceID: 11710}
+      Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 11942}
+      Script: {instanceID: 11648}
     - Class: 114
-      Script: {instanceID: 11956}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 11968}
+      Script: {instanceID: 11712}
     - Class: 114
-      Script: {instanceID: 12424}
+      Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 12446}
+      Script: {instanceID: 11970}
     - Class: 114
-      Script: {instanceID: 12526}
+      Script: {instanceID: 12358}
     - Class: 114
-      Script: {instanceID: 12646}
+      Script: {instanceID: 12388}
     - Class: 114
-      Script: {instanceID: 12670}
+      Script: {instanceID: 12426}
     - Class: 114
-      Script: {instanceID: 12802}
+      Script: {instanceID: 12528}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12558}
     - Class: 114
-      Script: {instanceID: 12978}
+      Script: {instanceID: 12656}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 13130}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 13146}
+      Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 13318}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 13348}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 13392}
+      Script: {instanceID: 12936}
     - Class: 114
-      Script: {instanceID: 13402}
+      Script: {instanceID: 12980}
     - Class: 114
-      Script: {instanceID: 13454}
+      Script: {instanceID: 13014}
     - Class: 114
-      Script: {instanceID: 70842}
+      Script: {instanceID: 13028}
+    - Class: 114
+      Script: {instanceID: 13076}
+    - Class: 114
+      Script: {instanceID: 13132}
+    - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
+      Script: {instanceID: 13350}
+    - Class: 114
+      Script: {instanceID: 13394}
+    - Class: 114
+      Script: {instanceID: 13406}
+    - Class: 114
+      Script: {instanceID: 13418}
+    - Class: 114
+      Script: {instanceID: 13430}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
+    - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -130,8 +158,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -838,6 +864,12 @@ ScriptsOnlyBuild:
     className: EmulatorClientSocket
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TecladoNativo
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -914,13 +946,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TecladoNativo
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Test00.unity
-  playerPath: F:/Unity-1/geometriavr/testvr00/testvr00kb2.apk
+  - Assets/Scenes/Correo00.unity
+  playerPath: C:/Git/geometriavr/testvr00/testvr00kb3.apk
