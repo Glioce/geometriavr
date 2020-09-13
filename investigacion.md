@@ -1,5 +1,78 @@
 # Investigación
 
+Paquete para hacer VR
+https://developers.google.com/vr/develop/unity/get-started-android
+
+Tuto con paquete anterior
+https://www.youtube.com/watch?v=KZ90tgWvNuE
+
+Importar SVG, al final no se utilizó
+https://stackoverflow.com/questions/52562020/how-to-import-svg-to-unity-2018-2
+
+Exportar FBX, tampoco se utilizó
+https://docs.unity3d.com/es/530/Manual/HOWTO-exportFBX.html
+
+Versión de Unity 2019.3
+Se debe poder cambiar a otra versión 2019.X
+
+Primerso se usó formato SVG para las imágenes de reactivos, pero tenían errores en los colores de relleno.
+Se va a utilizar mejor PNG
+
+Ejemplos que pueden ayudar
+https://aframe.io
+
+Modificar los XRsettings dentro del código no parece buena opción
+https://docs.unity3d.com/ScriptReference/XR.XRSettings.html
+https://forum.unity.com/threads/disable-stereo-rendering-with-cardboard-and-gear-sdk.497214/
+https://forum.unity.com/threads/vr-cardboard-ui-screen-space-overlay-canvas-with-new-native-carboard-vr-sdk-in-unity-5-6-0.466677/
+https://forum.unity.com/threads/vr-mode-with-mono-camera.479031/
+
+
+
+Quickstart for Google VR SDK for Unity with Android
+
+Cardboard: Android 4.4 'KitKat' (API level 19) or higher
+
+Unity recomended version LTS 2018.4 or newer (se usará 2019.3)
+
+Instalar Android Build Support
+
+Descargar "GoogleVRForUnity_*.unitypackage"
+Usaremos "GoogleVRForUnity_1.200.1.unitypackage" (GVR SDK for Unity v1.200.1 (2019-07-17))
+
+1. Crear nuevo proyecto 3D
+2. Assets > Import Package > Custom Package
+3. Selecionar unitypackage descargado, clic Import
+4. File > Build Settings
+5. Seleccionar Android, clic Switch Platform
+6. En Player Settings > XR Settings poner
+    VR Supported - Enabled
+	VR SDKs - Cardboard
+7. En Player Settings > Other Settings
+    Min API level - 4.4 'KitKat'
+8 Opcional en Player Settings > Package Name
+    Nombre de la aplicación
+9. Abrir demo en Google VR > Demos > Scenes > HeloVR
+10. Presiona Play, gira con Alt+mouse, inclina vista con Ctrl+mouse, clic en cualquier lugar de la pantalla
+
+Revisar estado de Android: Edit > preferences > External Tools
+Cambiar color al presionar botón Play: Edit > preferences > Colors
+
+Assets necesarios (prefabs)
+- GvrEventSystem
+- GvrEditorEmulator
+- GvrControllerMain
+- Game Object > 3D Object
+- Materiales: Create > New material, arrastrar a objeto
+- Para mover la cámara, objeto player Create Empty, Main Camera como hijo
+- CubeRoom
+- GvrReticlePointer como hijo de Main Camera, rev tag "Main Camera"
+- GvrPointerPhysicsRaycaster ??
+- En 3D Object, Add Component > Event Trigger >Add New ... > PointerEnter, arrastrar objeto que interactua
+- Save Scene
+
+Se generan muchos warnings usando el mínimo de objetos. La escena HelloVR no genera los warnings, ¿qué objetos faltan?
+
 ## Texture swap
 Buscar: "Unity texture swap"  
 
