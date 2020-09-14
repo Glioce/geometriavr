@@ -60,8 +60,8 @@ public class EvaluadorRespuestas : MonoBehaviour
         calif += "\nRango obtenido: " + rangoObtenido;
         Debug.Log(calif);
 
-        SendMail(Globals.recoMail, calif);
-        SendMail(Globals.userMail, "Rango obtenido: " + rangoObtenido);
+        //SendMail(Globals.recoMail, calif);
+        //SendMail(Globals.userMail, "Rango obtenido: " + rangoObtenido);
     }
 
     // Update is called once per frame
