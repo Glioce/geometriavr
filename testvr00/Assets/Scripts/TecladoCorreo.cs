@@ -19,7 +19,7 @@ public class TecladoCorreo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (keyboard != null)
+        if ((keyboard != null) && (Globals.campoSeleccionado == Globals.CAMPO_CORREO))
         {
             Globals.userMail = keyboard.text;
             GetComponentInChildren<Text>().text = Globals.userMail;
@@ -29,6 +29,7 @@ public class TecladoCorreo : MonoBehaviour
 
     public void AbreTeclado()
     {
+        Globals.campoSeleccionado = Globals.CAMPO_CORREO;
         keyboard = TouchScreenKeyboard.Open(Globals.userMail, TouchScreenKeyboardType.EmailAddress);
     }
 

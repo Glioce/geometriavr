@@ -19,7 +19,7 @@ public class TecladoNombre : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (keyboard != null)
+        if ((keyboard != null) && (Globals.campoSeleccionado == Globals.CAMPO_NOMBRE))
         {
             Globals.userName = keyboard.text;
             GetComponentInChildren<Text>().text = Globals.userName;
@@ -29,6 +29,7 @@ public class TecladoNombre : MonoBehaviour
 
     public void AbreTeclado()
     {
+        Globals.campoSeleccionado = Globals.CAMPO_NOMBRE;
         keyboard = TouchScreenKeyboard.Open(Globals.userName, TouchScreenKeyboardType.Default);
     }
 }

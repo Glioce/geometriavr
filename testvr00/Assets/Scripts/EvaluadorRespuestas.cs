@@ -10,6 +10,8 @@ using System.Security.Cryptography.X509Certificates;
 
 public class EvaluadorRespuestas : MonoBehaviour
 {
+    public GameObject txtTiempo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +64,10 @@ public class EvaluadorRespuestas : MonoBehaviour
 
         //SendMail(Globals.recoMail, calif);
         //SendMail(Globals.userMail, "Rango obtenido: " + rangoObtenido);
+
+        // Mostar tiempo restante
+        if (Globals.tiempoRestante > 0) txtTiempo.GetComponent<Text>().text = "Tiempo restante: " + FormatoReloj(Globals.tiempoRestante);
+        else txtTiempo.GetComponent<Text>().text = "¡Se acabó el tiempo!";
     }
 
     // Update is called once per frame
@@ -84,5 +90,14 @@ public class EvaluadorRespuestas : MonoBehaviour
         { return true; };
         smtpServer.Send(mail);
         Debug.Log("Correo enviado");
+    }
+
+    // recibe el valor de segundos y lo presenta en formato minutos:segundos (ejemplo 19:10)
+    public string FormatoReloj(float segundos)
+    {
+        int minutos = (int)(segundos / 60);
+        segundos = (int)(segundos % 60);
+        string reloj = minutos + ":" + segundos;
+        return reloj;
     }
 }

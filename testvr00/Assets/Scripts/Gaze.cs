@@ -44,6 +44,8 @@ public class Gaze : MonoBehaviour
     public void On()
     {
         gvrStatus = true;
+        gvrTimer = 0;
+        circulo.fillAmount = 0;
     }
 
     public void Off()
