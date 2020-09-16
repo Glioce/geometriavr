@@ -15,7 +15,7 @@ public static class Globals
     
     // mail
     // la siguiente direccion aparece al inicio del juego cuando el usuario no ha escrito su propio correo
-    public static string defaultMail = "ralarconhz@gmail.com";
+    public static string defaultMail = "ejemplo@gmail.com";
     public static string defaultName = "Jugador";
     // la siguiente direccion se sobreescribe con la direccion del usuario/jugador
     public static string userMail = defaultMail;

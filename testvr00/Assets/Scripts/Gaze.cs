@@ -10,6 +10,9 @@ public class Gaze : MonoBehaviour
 {
     public Image circulo; //objeto que muestra un sprite circular
     public float totalTime = 0.6f; //tiempo que se debe hacer hover para activar clic
+
+    //public AudioClip audioBoton; //este scrip reproduce el efecto de sonido del boton
+
     bool gvrStatus; //status de conteo
     float gvrTimer; //incrementa su valor cuando se hace hover
     public Button button;

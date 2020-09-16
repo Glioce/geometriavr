@@ -157,11 +157,10 @@ public class ControladorTest : MonoBehaviour
             btnRespuestaB.GetComponent<Image>().sprite = btnRespuestaB.GetComponent<SpriteManager>().sprites[numPregunta];
             btnRespuestaC.GetComponent<Image>().sprite = btnRespuestaC.GetComponent<SpriteManager>().sprites[numPregunta];
             btnRespuestaD.GetComponent<Image>().sprite = btnRespuestaD.GetComponent<SpriteManager>().sprites[numPregunta];
-
-            MarcarSeleccionado();
         }
         txtReactivo.GetComponent<Text>().text = "Reactivo " + (numPregunta + 1);
-    }
+        MarcarSeleccionado();
+    }// fin PreguntaSig
 
     // Ir a la pregunta anterior
     public void PreguntaPrev()
@@ -217,6 +216,11 @@ public class ControladorTest : MonoBehaviour
         {
             imgPregunta.SetActive(true); //hacer visible imagen usada en preguntas 1 a 16
             imgPregunta17.SetActive(false); //esta imagen se oculta
+            imgPregunta.GetComponent<Image>().sprite = imgPregunta.GetComponent<SpriteManager>().sprites[numPregunta];
+            btnRespuestaA.GetComponent<Image>().sprite = btnRespuestaA.GetComponent<SpriteManager>().sprites[numPregunta];
+            btnRespuestaB.GetComponent<Image>().sprite = btnRespuestaB.GetComponent<SpriteManager>().sprites[numPregunta];
+            btnRespuestaC.GetComponent<Image>().sprite = btnRespuestaC.GetComponent<SpriteManager>().sprites[numPregunta];
+            btnRespuestaD.GetComponent<Image>().sprite = btnRespuestaD.GetComponent<SpriteManager>().sprites[numPregunta];
         }
         // si regresa a pregunta 17 (index 16)
         else if (numPregunta == 16)
@@ -248,11 +252,10 @@ public class ControladorTest : MonoBehaviour
             btnRespuestaB.GetComponent<Image>().sprite = btnRespuestaB.GetComponent<SpriteManager>().sprites[numPregunta];
             btnRespuestaC.GetComponent<Image>().sprite = btnRespuestaC.GetComponent<SpriteManager>().sprites[numPregunta];
             btnRespuestaD.GetComponent<Image>().sprite = btnRespuestaD.GetComponent<SpriteManager>().sprites[numPregunta];
-
-            MarcarSeleccionado();
         }
         txtReactivo.GetComponent<Text>().text = "Reactivo " + (numPregunta + 1);
-    }
+        MarcarSeleccionado();
+    } //fin PreguntaPrev
 
     // Responder la pregunta actual
     public void Responder(int inciso)
@@ -272,18 +275,37 @@ public class ControladorTest : MonoBehaviour
     public void MarcarSeleccionado()
     {
         // marcar seleccionado
-        // primero poner todos a blanco
-        btnRespuestaA.GetComponent<Image>().color = Color.white;
-        btnRespuestaB.GetComponent<Image>().color = Color.white;
-        btnRespuestaC.GetComponent<Image>().color = Color.white;
-        btnRespuestaD.GetComponent<Image>().color = Color.white;
-        // luego marcar el botón seleccionado
-        switch (Globals.userAnswers[numPregunta]) //obtener valor de respuesta
+
+        // si el numero de pregunta es menor a 18 (index 17)
+        if (numPregunta < 17)
         {
-            case 1: btnRespuestaA.GetComponent<Image>().color = Color.yellow; break;
-            case 2: btnRespuestaB.GetComponent<Image>().color = Color.yellow; break;
-            case 3: btnRespuestaC.GetComponent<Image>().color = Color.yellow; break;
-            case 4: btnRespuestaD.GetComponent<Image>().color = Color.yellow; break;
+            // primero poner todos a blanco
+            btnRespuestaA.GetComponent<Image>().color = Color.white;
+            btnRespuestaB.GetComponent<Image>().color = Color.white;
+            btnRespuestaC.GetComponent<Image>().color = Color.white;
+            btnRespuestaD.GetComponent<Image>().color = Color.white;
+            // luego marcar el botón seleccionado
+            switch (Globals.userAnswers[numPregunta]) //obtener valor de respuesta
+            {
+                case 1: btnRespuestaA.GetComponent<Image>().color = Color.yellow; break;
+                case 2: btnRespuestaB.GetComponent<Image>().color = Color.yellow; break;
+                case 3: btnRespuestaC.GetComponent<Image>().color = Color.yellow; break;
+                case 4: btnRespuestaD.GetComponent<Image>().color = Color.yellow; break;
+            }
+        }
+        else
+        {
+            // primero poner todos a blanco
+            btnRespuestaA18.GetComponent<Image>().color = Color.white;
+            btnRespuestaB18.GetComponent<Image>().color = Color.white;
+            btnRespuestaC18.GetComponent<Image>().color = Color.white;
+            // luego marcar el botón seleccionado
+            switch (Globals.userAnswers[numPregunta]) //obtener valor de respuesta
+            {
+                case 1: btnRespuestaA18.GetComponent<Image>().color = Color.yellow; break;
+                case 2: btnRespuestaB18.GetComponent<Image>().color = Color.yellow; break;
+                case 3: btnRespuestaC18.GetComponent<Image>().color = Color.yellow; break;
+            }
         }
     }
 
