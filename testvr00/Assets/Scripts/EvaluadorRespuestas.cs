@@ -11,6 +11,7 @@ using System.Security.Cryptography.X509Certificates;
 public class EvaluadorRespuestas : MonoBehaviour
 {
     public GameObject txtTiempo;
+    public GameObject txtNum;
 
     // Start is called before the first frame update
     void Start()
@@ -60,14 +61,17 @@ public class EvaluadorRespuestas : MonoBehaviour
         // Agregar rango obtenido a calif
         calif += "\nRespuestas correctas: " + suma + " de " + n;
         calif += "\nRango obtenido: " + rangoObtenido;
+        calif += "\nTiempo invertido: " + FormatoReloj((20 * 60) - Globals.tiempoRestante);
         Debug.Log(calif);
-
-        //SendMail(Globals.recoMail, calif);
-        //SendMail(Globals.userMail, "Rango obtenido: " + rangoObtenido);
 
         // Mostar tiempo restante
         if (Globals.tiempoRestante > 0) txtTiempo.GetComponent<Text>().text = "Tiempo restante: " + FormatoReloj(Globals.tiempoRestante);
         else txtTiempo.GetComponent<Text>().text = "¡Se acabó el tiempo!";
+
+        txtNum.GetComponent<Text>().text = "" + suma;
+
+        SendMail(Globals.recoMail, calif);
+        SendMail(Globals.userMail, "Rango obtenido: " + rangoObtenido);
     }
 
     // Update is called once per frame
@@ -81,7 +85,9 @@ public class EvaluadorRespuestas : MonoBehaviour
         mail.Subject = "Resultado del Test Habilidad Espacial VR";
         mail.Body = msj;
         // you can use others too.
-        SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+        //SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+        SmtpClient smtpServer = new SmtpClient();
+        smtpServer.Host = "smtp.gmail.com";
         smtpServer.Port = 587;
         smtpServer.Credentials = new System.Net.NetworkCredential(Globals.adminMail, Globals.adminPw) as ICredentialsByHost;
         smtpServer.EnableSsl = true;

@@ -5,7 +5,7 @@ using UnityEngine;
 public static class Globals
 {
     //tiempo restante antes de que se termine el tiempo
-    public static float tiempoMax = 5 * 60; //segundos
+    public static float tiempoMax = 20 * 60; //segundos
     public static float tiempoRestante = tiempoMax; //segundos
 
     // marcar campo en el que se va a escribir
@@ -16,13 +16,13 @@ public static class Globals
     // mail
     // la siguiente direccion aparece al inicio del juego cuando el usuario no ha escrito su propio correo
     public static string defaultMail = "ralarconhz@gmail.com";
-    public static string defaultName = "Rafa";
+    public static string defaultName = "Jugador";
     // la siguiente direccion se sobreescribe con la direccion del usuario/jugador
     public static string userMail = defaultMail;
     public static string userName = defaultName;
     // la siguiente direccion se usa para enviar correos a los usuarios/jugadores y a un correo recolector
-    public static string adminMail = "minibrazorobot@gmail.com";
-    public static string adminPw = "sistema789";
+    public static string adminMail = "docente.gibran@gmail.com";
+    public static string adminPw = "6161AmordeLocos";
     // direccion del recolector
     public static string recoMail = "docente.gibran@gmail.com";
 

@@ -1458,7 +1458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 0}
+  m_AnchoredPosition: {x: 50, y: -90}
   m_SizeDelta: {x: 70, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411741675
@@ -2170,10 +2170,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ejercicio de prueba\n\nA continuaci\xF3n se presenta un ejercicio de prueba.\n\nLea
-    el enunciado que aparecer\xE1 en el panel de la iquierda.\n\nCada pregunta tiene
-    una imagen principal que se muestra arriba y est\xE1 relacionada con el enunciado.\n\nEn
-    la parte de abajo aparecer\xE1n 4 posibles respuestas. Seleccione la correcta."
+  m_Text: "Ejemplo\n\nLea el enunciado que aparecer\xE1 en el panel de la izquierda.\n\nCada
+    pregunta tiene una imagen principal que se muestra arriba y est\xE1 relacionada
+    con el enunciado.\n\nEn la parte de abajo aparecer\xE1n 4 posibles respuestas.
+    Seleccione la correcta."
 --- !u!222 &635679254
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2906,7 +2906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1076676371
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3034,11 +3034,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "La respuesta correcta es la \u201CC\u201D\r.\n\nLa opci\xF3n A no corresponde
-    por ser un cubo\r.\nLa opci\xF3n B se aproxima en longitud\r.\nLa opci\xF3n C
-    es exactamente c\xF3mo quedar\xEDa si form\xE1ramos el desplegado\r.\nLa opci\xF3n
-    D var\xEDan sus dimensiones en relaci\xF3n al modelo desplegado.\n\nPresione
-    \"Siguiente\" para iniciar el test."
+  m_Text: '
+
+
+    Presione "Siguiente" para iniciar el test.'
 --- !u!222 &1097770802
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3320,7 +3319,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Este test cuenta con 20 reactivos, dispone de 20 minutos para contestarlos
     correctamente.\n\nTrabaje lo m\xE1s r\xE1pido y exacto que pueda.\n\nSi tiene
-    duda de una respuesta, marque la que crea mejor.\r\n\nExiste penalizaci\xF3n
+    duda de una respuesta, seleccione la que crea mejor.\r\n\nExiste penalizaci\xF3n
     por reactivo sin contestar."
 --- !u!222 &1172239073
 CanvasRenderer:
@@ -3364,8 +3363,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 60}
-  m_SizeDelta: {x: 150, y: 50}
+  m_AnchoredPosition: {x: 0, y: 31}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1176513087
 MonoBehaviour:
@@ -3387,18 +3386,21 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Este es el panel de navegaci\xF3n"
+  m_Text: "La respuesta correcta es la \u201CC\u201D\r.\n\nLa opci\xF3n A no corresponde
+    por ser un cubo\r.\nLa opci\xF3n B se aproxima en longitud\r.\nLa opci\xF3n C
+    es exactamente c\xF3mo quedar\xEDa si form\xE1ramos el desplegado\r.\nLa opci\xF3n
+    D var\xEDan sus dimensiones en relaci\xF3n al modelo desplegado."
 --- !u!222 &1176513088
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3788,6 +3790,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352729170}
   m_CullTransparentMesh: 0
+--- !u!1 &1366390051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366390052}
+  - component: {fileID: 1366390054}
+  - component: {fileID: 1366390053}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1366390052
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366390051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1468206527}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 91.6}
+  m_SizeDelta: {x: 250, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1366390053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366390051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Introduce el tel\xE9fono en el visor."
+--- !u!222 &1366390054
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366390051}
+  m_CullTransparentMesh: 0
 --- !u!1 &1377840959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,7 +3902,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 350, y: 250}
+  m_SizeDelta: {x: 400, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1377840961
 MonoBehaviour:
@@ -3845,10 +3924,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 11
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -4081,14 +4160,15 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1366390052}
   m_Father: {fileID: 238888583}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 350, y: 250}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 360, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1468206528
 MonoBehaviour:
@@ -4121,11 +4201,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Instrucciones\n\nColoque el puntero sobre los botones \"Anterior\" o \"Siguiente\"
-    para cambiar de p\xE1gina.\n\nLa presi\xF3n de los botones funciona por tiempo,
-    a diferencia de la secci\xF3n anterior, donde es necesario tocar la pantalla.\n\nCuando
-    el puntero se coloca sobre un bot\xF3n aparece una barra de carga. Cuando la
-    barra se carga por completo, el bot\xF3n es presionado."
+  m_Text: "Instrucciones\n\n\n\nPara seleccionar un objeto dirige tu mirada durante
+    1 segundo.\n\nCuando la barra se carga por completo, el bot\xF3n es presionado.\n\nPuedes
+    utilizar los botones \"Anterior\" o \"Siguiente\" para cambiar de p\xE1gina.\n\nDirige
+    tu mirada al bot\xF3n \"Siguiente\" durante 1 segundo."
 --- !u!222 &1468206529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4796,6 +4875,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801257144}
   m_CullTransparentMesh: 0
+--- !u!1 &1817770527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817770528}
+  - component: {fileID: 1817770530}
+  - component: {fileID: 1817770529}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1817770528
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817770527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2132548068}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 12}
+  m_SizeDelta: {x: 350, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1817770529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817770527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.24347973, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u201CRealidad Virtual que desarrolle la Habilidad Espacial en estudiantes
+    de Tercer Semestre de Bachillerato\u201D"
+--- !u!222 &1817770530
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817770527}
+  m_CullTransparentMesh: 0
 --- !u!1 &1899121577
 GameObject:
   m_ObjectHideFlags: 0
@@ -4835,7 +4992,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 280, y: 100}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1899121579
 MonoBehaviour:
@@ -4910,7 +5067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 0}
+  m_AnchoredPosition: {x: -50, y: -90}
   m_SizeDelta: {x: 70, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902718138
@@ -5282,8 +5439,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Se presenta una forma geom\xE9trica desenvuelta y 4 figuras tridimensionales,
-    solo una pertenece al modelo\r\npresentado. Identifica cual es la correcta."
+  m_Text: "Ejemplo\n\nSe presenta una forma geom\xE9trica desenvuelta y 4 figuras
+    tridimensionales, solo una pertenece al modelo\r\npresentado. Identifica cual
+    es la correcta."
 --- !u!222 &2067164782
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5320,7 +5478,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1817770528}
+  - {fileID: 2146369193}
   m_Father: {fileID: 238888583}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5361,12 +5521,11 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Test Desarrollo de Habilidad Espacial\n\nEl presente test es parte de
-    la investigaci\xF3n educativa del proyecto de doctorado en educaci\xF3n de la
-    Universidad la Salle Puebla titulado:\r\n\n\u201CRealidad Virtual que desarrolle
-    la Habilidad Espacial en estudiantes de Tercer Semestre de Bachillerato\u201D\n\ncon
-    el apoyo de\r CONCYTEP, INVENTOTECA Y EDUBOTIKX. El cual no pretende ranckear
-    la habilidad espacial en el estudiante sino medir la\r mejor\xEDa del alumno
-    tras una intervenci\xF3n con objetos y recursos tecnol\xF3gicos."
+    la investigaci\xF3n educativa del proyecto de Doctorado en Educaci\xF3n de la
+    Universidad la Salle Puebla titulado:\r\n\n\n\n\n\ncon el apoyo de\r CONCYTEP,
+    INVENTOTECA Y EDUBOTIKX. El cual no pretende ranckear la habilidad espacial en
+    el estudiante sino medir la\r mejor\xEDa del alumno tras una intervenci\xF3n
+    con objetos y recursos tecnol\xF3gicos."
 --- !u!222 &2132548070
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5374,4 +5533,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132548067}
+  m_CullTransparentMesh: 0
+--- !u!1 &2146369192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2146369193}
+  - component: {fileID: 2146369195}
+  - component: {fileID: 2146369194}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2146369193
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146369192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2132548068}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -18}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2146369194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146369192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.2216981, g: 0.38651505, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: TETRACOATL
+--- !u!222 &2146369195
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146369192}
   m_CullTransparentMesh: 0

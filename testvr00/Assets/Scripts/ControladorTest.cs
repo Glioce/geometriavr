@@ -35,6 +35,8 @@ public class ControladorTest : MonoBehaviour
     public GameObject txtInstru_14_16;
     public GameObject txtInstru_17;
     public GameObject txtInstru_18_20;
+    public GameObject txtReactivo;
+    public GameObject imgGiro;
 
     int numPregunta = 0; //index
 
@@ -66,6 +68,7 @@ public class ControladorTest : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else
             numPregunta++;
+
 
         // Cambiar texto de instrucciones
         if (numPregunta == 5) //pregunta 6 (index 5)
@@ -100,8 +103,19 @@ public class ControladorTest : MonoBehaviour
         }
 
         // Cambiar apariencia de preguntas
+        // en la pregunta 14 (index 13) se muestran instrucciones de giro mental
+        if (numPregunta == 13)
+        {
+            imgGiro.SetActive(true);
+        }
+        if (numPregunta == 14)
+        {
+            imgGiro.SetActive(false);
+        }
+
         // al llegar a la pregunta 17 (index 16) cambia la apariencia
-        if (numPregunta == 16) {
+        if (numPregunta == 16)
+        {
             imgPregunta.SetActive(false); //ocultar imagen usada en preguntas 1 a 16
             imgPregunta17.SetActive(true); //esta imagen se hace visible
 
@@ -146,6 +160,7 @@ public class ControladorTest : MonoBehaviour
 
             MarcarSeleccionado();
         }
+        txtReactivo.GetComponent<Text>().text = "Reactivo " + (numPregunta + 1);
     }
 
     // Ir a la pregunta anterior
@@ -176,15 +191,25 @@ public class ControladorTest : MonoBehaviour
             txtInstru_13.SetActive(true);
             txtInstru_14_16.SetActive(false);
         }
-        else if (numPregunta == 13) //pregunta 14 (index 13)
+        else if (numPregunta == 15) //pregunta 16 (index 15)
         {
             txtInstru_14_16.SetActive(true);
-            txtInstru_13.SetActive(false);
+            txtInstru_17.SetActive(false);
         }
-        else if (numPregunta == 13) //pregunta 17 (index 13)
+        else if (numPregunta == 16) //pregunta 17 (index 16)
         {
             txtInstru_17.SetActive(true);
             txtInstru_18_20.SetActive(false);
+        }
+
+        // si regresa a pregunta 13 (index 12) se quitan instrucciones de giro mental
+        if (numPregunta == 12)
+        {
+            imgGiro.SetActive(false);
+        }
+        if (numPregunta == 13)
+        {
+            imgGiro.SetActive(true);
         }
 
         //si regresa a pregunta 16 (index 15)
@@ -226,6 +251,7 @@ public class ControladorTest : MonoBehaviour
 
             MarcarSeleccionado();
         }
+        txtReactivo.GetComponent<Text>().text = "Reactivo " + (numPregunta + 1);
     }
 
     // Responder la pregunta actual

@@ -1962,8 +1962,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Bienvenido.\nToca los siguientes botones para abrir el teclado.\nProporciona
-    un nombre y una\ndirecci\xF3n de correo electr\xF3nico."
+  m_Text: "Bienvenido.\nColoca el puntero sobre el bot\xF3n Jugador y toca la pantalla
+    para ingresar tu nombre y correo electr\xF3nico."
 --- !u!222 &1188248466
 CanvasRenderer:
   m_ObjectHideFlags: 0
